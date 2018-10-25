@@ -1,7 +1,6 @@
 
+window.onload = function() {
+	console.log('page loaded');
+};
 
-document.ready(function() {
-	alert('page loaded');
-});
-
-alert('js hit');
+console.log('js hit');
