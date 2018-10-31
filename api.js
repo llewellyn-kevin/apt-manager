@@ -1,6 +1,6 @@
 
 window.onload = function() {
-	console.log('page loaded');
+	console.log('updated text');
 };
 
 console.log('js hit');
