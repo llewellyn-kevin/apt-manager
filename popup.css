@@ -1,14 +1,21 @@
-#app {
+html {
   margin: 0;
   padding: 0;
+  background-image: linear-gradient(to bottom, #1c92d2, #f2fcfe);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: rgb(36, 35, 35);
+  height: 600px;
+  width: 500px;
+}
+#app {
   box-sizing: border-box;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: 80px 460px 60px;
   grid-gap: 3px;
-  width: 500px;
-  height: 600px;
-  background-image: linear-gradient(to bottom, #567762, #93F9B9);
+  width: 100%;
+  height: 100%;
 }
 #logo {
   grid-column: 1 / 6;
@@ -36,10 +43,10 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #97C6A8;
+  background: #A9D8EF;
 }
 .event:hover {
-  background: #ABD3B9;
+  background: rgb(92, 175, 219);
 }
 .details {
   display: flex;
@@ -51,7 +58,7 @@
   font-family: Helvetica, Arial, sans-serif;
   font-size: 0.6rem;
   display: inline-block;
-  vertical-aling: top;
+  vertical-align: top;
   margin: 0 15px 0 0;
   user-select: none;
 }
