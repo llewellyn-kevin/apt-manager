@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "name": "Automated Reminders",
+  "name": "Appointment Manager",
   "description": "Automate email and text reminders from Google Calendar events",
-  "version": "1.0",
+  "version": "1.0.1",
   "author": "Cyperion",
   
   "browser_action": {
@@ -11,10 +11,9 @@
     "default_title": "Keep Changing the World!"
   },
 
-  "chrome_url_overrides": {
-    "newtab": "newtab.html"
-  },
-
-  "permissions": ["activeTab"]
+  "background": {
+    "persistent": false,
+    "scripts": ["popup.js"]
+  }
 }
 
