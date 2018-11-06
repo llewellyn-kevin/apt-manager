@@ -4,7 +4,6 @@ window.onload = () => {
     if (settings) {
         settings.addEventListener('click', e => {
             chrome.tabs.create({ url: "/settings.html" });
-            alert('something worked');
         });
 
     }

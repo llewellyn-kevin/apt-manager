@@ -1,34 +1,41 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>App Settings</title>
+    <title>Appointment Manager</title>
     <link rel="stylesheet" href="/settings.scss">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+    <link rel="icon" href="/tab-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   </head>
   <body>
     <h1>Settings</h1>
     <div class="card">
       <h2>Your Calendars</h2>
-      <ul>
-        <li>Event Calendar</li>
-        <li>Volunteers #1</li>
-        <li>Something else</li>
+      <ul id="calendar-list">
+        <li>Event Calendar<i class="fa fa-minus-circle delete"></i></li>
+        <li>Volunteers #1<i class="fa fa-minus-circle delete"></i></li>
+        <li>Something else<i class="fa fa-minus-circle delete"></i></li>
       </ul>
       <div>
-        <span>Add Calendar</span>
-        <input type="text" placeholder="Link to Calendar" />
+        <span>Add Calendar:</span>
+        <input type="text" placeholder="Link to Calendar" id="add-cal"/>
+        <button type="button" id="calendar-btn">Add</button>
+        <button type="button" id="edit-calendar" class="editBtn">Edit</button>    
       </div>
     </div>
     <div class="card">
         <h2>Do Not Remind List</h2>
-        <ul>
-          <li>John Doe</li>
-          <li>Morgan Smith</li>
-          <li>Utah Food Bank</li>
+        <ul id="no-reminder-list">
+          <li>John Doe<i class="fa fa-minus-circle delete"></i></li>
+          <li>Morgan Smith<i class="fa fa-minus-circle delete"></i></li>
+          <li>Utah Food Bank<i class="fa fa-minus-circle delete"></i></li>
         </ul>
         <div>
-          <span>Disable Reminders</span>
-          <input type="text" placeholder="Email of person / org." />
+          <span>Disable Reminders For:</span>
+          <input type="text" placeholder="Email of person / org."/>
+          <button type="button" id="reminder-btn">Disable</button>  
+          <button type="button" id="edit-reminders" class="editBtn">Edit</button>              
+          
         </div>
       </div>
   </body>

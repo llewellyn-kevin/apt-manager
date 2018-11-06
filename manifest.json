@@ -13,7 +13,7 @@
 
   "background": {
     "persistent": false,
-    "scripts": ["popup.js"]
+    "scripts": ["popup.js", "settings.js"]
   }
 }
 
