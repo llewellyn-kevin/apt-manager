@@ -11,4 +11,5 @@ Within description, contacts are identified based off of the convention: '__NAME
 --------
 - Kevin LLewellyn
 - Jacob Pettingil
+- Andrew Eyring
 - Connor Lindsey
